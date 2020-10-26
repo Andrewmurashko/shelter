@@ -1,0 +1,115 @@
+.about {
+    display: flex;
+    justify-content: center
+
+}
+.about__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: 81px 40px 0px 40px ;
+    @include media-tablet {
+        margin: 66px 0 0 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    @include media-mobile {
+        flex-direction: column-reverse;
+        max-width: 320px;
+        margin: 43px 0 0 0 ;
+        padding: 0;
+        width: auto;
+    }
+    
+    
+
+}
+.about__img {
+    margin-right: 120px;
+    width: 300px;
+    height: 408px;
+    margin-bottom: 100px;
+    @include media-tablet {
+        margin: 80px 0 100px 0;
+        padding: 0;
+    }
+    @include media-mobile {
+        padding-top: 100px;
+        margin:0;
+        padding: 0;
+        >*{
+            width: 260px;
+    height: 353px;
+    padding-left: 19px;
+        }
+    }
+}
+.about__content {
+    margin-top: 15px;
+    width: 430px;
+    height: 380px;
+    @include media-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height:auto;
+        margin:0;
+        padding: 0;
+    }
+    
+}
+.about__title {
+    color: $color-dark-l ;
+    width: 370px;
+    height: 90px;
+    margin-bottom: 25px;
+    @include media-mobile {
+        text-align: center;
+        width: 270px;
+        margin:0 0 26px 0;
+        padding: 0;
+        height:auto;
+    }
+    }
+.about__text {
+    width: 430px;
+height: 96px;
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+margin-bottom: 25px;
+@include media-mobile {
+    width:270px;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0 0 22px 0;
+        padding: 0;
+        height:auto;
+        text-align: justify;
+}
+}
+.about__text2 {
+    width: 430px;
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+@include media-mobile {
+    width:270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 0 40px 0;
+        padding: 0;
+        height:auto;
+        text-align: justify;
+}
+}

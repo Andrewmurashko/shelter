@@ -1,0 +1,25 @@
+//abstract
+@import './abstract/constans';
+@import './abstract/mixins';
+@import './abstract/placeholders';
+
+// layouts
+@import './layouts/header';
+@import './layouts/wrapper';
+@import './layouts/footer';
+
+//base
+@import './base/base';
+@import './base/buttons';
+@import './base/modal';
+
+//components
+@import './components/logo';
+@import './components/nav';
+
+//sections
+@import './sections/about';
+@import './sections/our-friends';
+@import './sections/help.scss';
+@import './sections/donation';
+

@@ -1,0 +1,38 @@
+.navigation {
+  @include media-mobile {
+    display: none;
+  }
+}
+.navigation__list {
+  font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+    display:flex;
+    justify-content: space-between;
+    width:443px;
+    list-style-type: none;
+    >*{
+        &:last-child{
+          margin-right: 0%;
+        }
+    }
+}
+
+.navigation__item {
+
+  margin: 0 0px;
+  cursor: pointer;
+  color: $color-dark-l;
+  border-bottom: solid 3px transparent;
+  &:hover {
+    color: $color-primary;;
+  }
+  &_selected {
+    border-bottom: solid 3px blanchedalmond;
+    border-color: $color-primary;
+    color: $color-dark-3xl;
+    pointer-events: none;
+  }
+}

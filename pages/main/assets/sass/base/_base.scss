@@ -1,0 +1,62 @@
+html {
+    font-size: 15px;
+}
+body {
+    font-family: 'Georgia', serif;
+}
+h1 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    
+
+}
+
+h2 {
+    font-family: Georgia;
+    font-style: normal;
+font-weight: normal;
+font-size: 44px;
+line-height: 57px;
+
+}
+h3 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.056em;
+    @include media-mobile {
+        font-size: 25px;
+line-height: 32px;
+    }
+}
+h4 {
+    font-family: Georgia;
+    font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+}
+
+h5 {
+    font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 17px;
+letter-spacing: 0.06em
+}
+
+p {
+    $color-dark-xl: #292929
+}
+
+body,h1,h2,h3,h4,p,ul,li {
+    padding: 0;
+    margin: 0;
+}

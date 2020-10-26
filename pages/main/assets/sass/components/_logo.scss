@@ -1,0 +1,23 @@
+.logo {
+    width: 184px;
+    height: 60px;
+    
+}
+.logo__title {
+
+    color: $color-primary;
+    margin-bottom: 10px;
+    
+}
+
+.logo__subtitle {
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 15px;
+display: flex;
+letter-spacing: 0.099em;
+color: $color-light-xl;
+
+}

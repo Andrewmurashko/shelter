@@ -1,0 +1,123 @@
+footer {
+    background-image: url(./assets/img/footer/footer-gradient-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .footer__wrapper {
+    padding: 40px 0 0 ;
+    display: flex;
+    @include media-tablet {
+      padding: 30px 0 0 ;
+    }
+    @include media-mobile {
+      
+    }
+
+    @include media-tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include media-mobile {
+      
+    }
+img {
+    width: 300px;
+    height: 310px;
+    margin-left: 0px;   
+    @include media-tablet {
+      margin-top: 29px;
+    }
+    @include media-mobile {
+      width: 260px;
+    height: 269px;
+    margin-top: 24px;
+    } 
+}
+}
+  
+  .contact {
+    padding-right: 153px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    width: 740px;
+    @include media-tablet {
+      width: 708px;
+      justify-content: space-around;
+      padding-right: 0;
+      margin-top: auto;
+    }
+    @include media-mobile {
+      flex-direction: column;
+      width: auto;
+      align-items: center;
+    }
+  }
+  .contact__list {
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include media-tablet {
+    }
+    @include media-mobile {
+      align-items: center;
+    }
+  }
+  .contact__title {
+    color: $color-light-xl;
+    margin-bottom: 32px;
+    width: 278px;
+    @include media-tablet {
+    }
+    @include media-mobile {
+      font-size: 25px;
+line-height: 130%;
+/* or 32px */
+text-align: center;
+    } 
+    
+  }
+  .contact__link {
+    margin-bottom: 35px;
+
+    line-height: 2.3rem;
+    color: $color-primary;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+ 
+    &:hover{
+      color:$color-primary-light;
+    }
+    &-text{
+      margin-left: 15px;
+      margin-right: 10px;
+      @include media-mobile {
+        margin-left: 10px;
+      }
+    }
+    &-icon-position {
+      background-image: url(/assets/img/footer/icon-marker.png);
+      width: 32px;
+      height: 32px;
+      background-repeat: no-repeat;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      
+    }
+    &-icon-mail{
+      background-image: url(/assets/img/footer/icon-email.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 10px 0;
+      width: 42px;
+      height: 26px;
+    }
+    &-icon-phone{
+      background-image: url(/assets/img/footer/icon-phone.png);
+      width: 42px;
+      height: 29px;
+    }
+  }

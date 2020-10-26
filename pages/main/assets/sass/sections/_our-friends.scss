@@ -1,0 +1,119 @@
+.our-friends {
+display: flex;
+justify-content: center;
+background-color: $bg-light-s;
+}
+.our-friends__wrapper {
+    width: 1200px;
+    margin: 80px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-mobile {
+        max-width: 320px;
+        margin: 30px 0 0px;
+    }
+    @include media-tablet {
+        
+    }
+}
+.our-friends__title {
+    display: flex;
+text-align: center;
+width: 400px;
+height: 90px;
+margin-bottom: 60px;
+letter-spacing: 2.1px;
+@include media-mobile {
+    width: auto;
+    font-size: 25px;
+line-height: 32px;
+letter-spacing: 1.5px;
+margin-bottom: 16px;
+}
+}
+.our-friends__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 60px;
+    position: relative;
+    @include media-tablet {
+        width: 708px;
+    }
+    @include media-mobile {
+        width: 270px;
+        display: inline-block;
+        margin: 0 0 41px;
+    }
+    
+}
+.slider__list {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    overflow: hidden;
+    
+    @include media-tablet {
+        width: 580px;
+        overflow:hidden;
+        >*:nth-last-child(2){
+            padding-left: 40px;
+        }
+    }
+    @include media-mobile {
+        overflow:hidden;
+        width: 270px;
+        
+    }
+}
+.slide {
+    width: 270px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 90px;
+    @include media-mobile {
+        
+    }
+}
+.slide__img {
+margin-bottom: 30px;
+width: 270px;
+height: 270px;
+border-radius: 9px 9px 0px 0px;
+background-position: center;
+}
+.slide__name {
+    font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 1.1px;
+color: $color-dark-l;
+margin-bottom: 30px;
+}
+
+.slider__buttons {
+    display: flex;
+    max-width: auto;
+    height: auto;
+    >* {
+        position: absolute;
+    }
+    @include media-mobile {
+        justify-content: space-around;
+        margin: 21px 5px 0px 5px;
+        >* {
+            position: static;
+        }
+    }
+    
+}

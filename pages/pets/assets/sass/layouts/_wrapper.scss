@@ -1,0 +1,13 @@
+.wrapper {
+    width: 1280px;
+    margin: auto;
+    justify-content: center;
+    @include media-tablet {
+        max-width: 768px;
+
+    }
+    @include media-mobile {
+        max-width: 320px;
+    }
+    
+}

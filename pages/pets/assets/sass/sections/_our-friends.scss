@@ -1,0 +1,115 @@
+.our-friends {
+    display: flex;
+    justify-content: center;
+    background-color: $color-light-l;
+}
+.our-friends__wrapper {
+    width: 1200px;
+    margin: 0px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-tablet {
+
+    }
+    @include media-mobile {
+        >*{
+            width: auto;
+        }
+    }
+}
+.our-friends__title {
+    margin-top: 80px;
+    display: flex;
+    text-align: center;
+    width: 400px;
+    height: 90px;
+    margin-bottom: 0px;
+    letter-spacing: 2.1px;
+    @include media-tablet {
+
+        }
+        @include media-mobile {
+            width: auto;
+            margin-top: 73px;
+            font-size: 25px;
+line-height: 32px;
+            letter-spacing: 1.5px;
+        }
+   
+}
+.our-friends__slider {
+    margin-top: 60px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 0px;
+@include media-tablet {
+width: auto;
+margin-top: 30px;
+}
+@include media-mobile {
+    width: auto;
+    margin-top: 15px;
+
+    
+}
+}
+
+.slider__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+    width: 1200px;
+    @include media-tablet {
+        width: 620px;
+        height: 1365px;
+        overflow: hidden;
+        justify-content: space-around;
+        margin-bottom: 39px;
+        }
+        @include media-mobile {
+            width: auto;
+        }
+}
+.slide{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 270px;
+background-color: $color-light-s;
+margin-bottom: 60px;
+&:hover {background: #FFFFFF;
+}
+}
+.slide__img{
+    border-radius: 9px 9px 0px 0px;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 30px;
+}
+.slide__name{
+margin-bottom: 30px;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.06em;
+}
+.slider__buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    margin-bottom: 100px;
+    @include media-tablet {
+        margin-bottom: 77px;
+        }
+        @include media-mobile {
+            width: 300px;
+            margin-bottom: 45px;
+        }
+}

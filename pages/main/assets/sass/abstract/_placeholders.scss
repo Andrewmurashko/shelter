@@ -1,0 +1,24 @@
+%transition {
+    transition: all .3s ease-out;
+}
+
+%font-prim {
+    font-family: Georgia, sans-serif;
+}
+// @extend %font-prim;
+
+%hamburger-line {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+}
+
+%font-position {
+    display: flex;
+align-items: center;
+text-align: center;
+line-height: normal;
+}

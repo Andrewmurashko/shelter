@@ -1,0 +1,140 @@
+.donation {
+    background-color: $bg-light-s;
+}
+.donation__wrapper {
+display: flex;
+justify-content: center;
+margin-bottom: 111px;
+@include media-tablet {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 505px;
+    align-items: center;
+    margin-top: 99px;
+    margin-bottom: 0px;
+}
+@include media-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 300px;
+    align-items: center;
+    margin-top: 53px;
+    margin-bottom: 0px;
+}
+
+
+}
+.donation__img {
+margin-top: 92px;
+padding-right: 30px;
+@include media-tablet {
+    margin-top: 141px;
+    padding-right: 0px;
+    margin-bottom: 100px;
+}
+@include media-mobile {
+width: 260px;
+height: 135.2px;
+padding-right: 0px;
+margin-top: 42px;
+margin-bottom: 0px;
+}
+}
+
+.donation-info {
+width: 380px;
+height: 282px;
+@include media-mobile {
+display: flex;
+flex-direction: column;
+align-items: center;
+height: auto;
+
+}
+}
+.donation-info__title {
+    margin-top: 82px;
+    line-height: 45px;
+    @include media-mobile {
+        font-size: 25px;
+        line-height: 32px;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        width: 300px;
+        margin-top: 0px;
+    }
+}
+.donation-info__subtitle {
+    margin: 19px 0 0 0;
+    width: 308px;
+    height: 17px;
+    @include media-mobile {
+        line-height: 24px;
+        height: auto;
+        text-align: center;
+        letter-spacing: 0.01em;
+    }
+
+    
+}
+.donation-info__link {
+    padding: 0 14px 0 14px ;
+    margin-top: 20px;
+width: 320px;
+height: 43px;
+background-color: $color-primary;
+border-radius: 9px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-decoration: none;
+margin-bottom: 20px;
+&:hover{
+    background-color:$color-primary-light;
+  }
+  @include media-mobile {
+    width: 281px;
+    height: 43px;  
+    padding: 10px 0px 10px 0px ;
+    justify-content: space-around;
+    height: 25px;
+}
+
+}
+.img__card {
+
+}
+.button__text {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    color:$color-dark-l;
+    letter-spacing: 1.2px;
+
+    padding: 0 0 0 0;
+    @include media-mobile {
+        font-size: 15px;
+line-height: 17px;
+    }
+
+}
+.donation-info__text {
+    font-family: Arial;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-dark-xxl;
+    @include media-mobile {
+    font-size: 12px;
+line-height: 18px;
+width: 280px;
+text-align: justify;
+
+
+}
+}
