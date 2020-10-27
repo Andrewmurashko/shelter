@@ -156,7 +156,7 @@ const renderSlideModalWindow = (slide) => {
 }
 const addSliderClickHandler = () => {
     document.querySelector('.our-friends__wrapper').addEventListener('click', (e) => {
-        if (e.target.closest('.slide .button')) {
+        if (e.target.closest('.slide')) {
             let clickedSlideId = e.target.closest('.slide').getAttribute('data-id');
             let clickedSlideData = getClickedData(clickedSlideId);
             renderSlideModalWindow(clickedSlideData);
@@ -221,6 +221,7 @@ class Modal {
         this.modal.append(this.modalCloseBtn);
         this.modal.append(this.modalContent);
         this.overlay.append(this.modal);
+        document.body.style.overflow = 'hidden';
     }
     bindEvents() {
         this.modalCloseBtn.addEventListener('click', this.closeModal);
@@ -230,6 +231,7 @@ class Modal {
         let classes = e.target.classList;
         if (classes.contains('overlay') || classes.contains('modal__close-icon')) {
             document.querySelector('.overlay').remove();
+            document.body.style.overflow = 'visible';
         }
     }
     openModal() {
