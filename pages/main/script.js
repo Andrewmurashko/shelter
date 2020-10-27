@@ -108,7 +108,6 @@ const data = [
 window.onload = () => {
     console.log('123');
     //Generate Base Modal from Modal Class
-    addToolsClickHandler();
 }
 // Render slider list
 class Slides {
@@ -299,25 +298,8 @@ const renderModalWindow = (content) => {
 
 
 const linkLocation = document.querySelectorAll('[data-active-link]');
-
 linkLocation.forEach((el, index)=>{
     console.log(el, index);
     el.addEventListener('click',()=>{
     location.href = '../pets';
 })})
-
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    keyboard: {
-      enabled: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
