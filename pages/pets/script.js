@@ -108,7 +108,7 @@ const data = [
 window.onload = () => {
     console.log('123');
     //Generate Base Modal from Modal Class
-    addToolsClickHandler();
+    
 }
 // Render slider list
 class Slides {
