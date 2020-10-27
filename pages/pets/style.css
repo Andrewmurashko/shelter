@@ -318,6 +318,7 @@ body, h1, h2, h3, h4, p, ul, li {
   width: 270px;
   background-color: #FAFAFA;
   margin-bottom: 60px;
+  padding-bottom: 30px;
   cursor: pointer;
 }
 .slide:hover {
