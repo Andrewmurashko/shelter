@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .hamburger__line, .hamburger:after, .hamburger:before {
   content: "";
   display: inline-block;
@@ -630,10 +631,12 @@ body, h1, h2, h3, h4, p, ul, li {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   background-color: rgba(41, 41, 41, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .modal {
@@ -642,6 +645,7 @@ body, h1, h2, h3, h4, p, ul, li {
   border-radius: 9px;
   width: 900px;
   height: 500px;
+  cursor: default;
 }
 @media (max-width: 768px) {
   .modal {
@@ -714,6 +718,13 @@ body, h1, h2, h3, h4, p, ul, li {
   }
 }
 
+.fixed {
+  position: fixed;
+  /*позицианируем чтобы исчез скролл*/
+  width: 100%;
+  /*что бы верстка не складывалась по ширине*/
+}
+
 .logo {
   width: 184px;
   height: 60px;
@@ -768,6 +779,8 @@ body, h1, h2, h3, h4, p, ul, li {
   border-bottom: solid 3px blanchedalmond;
   border-color: #F1CDB3;
   color: #FAFAFA;
+}
+.navigation__item_disabled {
   pointer-events: none;
 }
 
@@ -992,6 +1005,10 @@ body, h1, h2, h3, h4, p, ul, li {
   align-items: center;
   cursor: pointer;
   margin-right: 90px;
+}
+.slide:hover {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .slide__img {
   margin-bottom: 30px;
